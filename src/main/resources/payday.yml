@@ -1,0 +1,54 @@
+paydays:
+  tier1townx:
+    timer: 120m
+    resources: # Item id: Item amount
+      IRON_ORE: 12
+      GOLD_ORE: 4
+      DIAMOND: 1
+    commands: # Item id: Command Use %player_name%
+      COINS: "eco give %player_name% 500"
+
+  tier2townx:
+    timer: 100m
+    resources:
+      IRON_ORE: 12
+      GOLD_ORE: 4
+      DIAMOND: 1
+    commands: # Item id: Command Use %player_name%
+      COINS: "eco give %player_name% 1000"
+
+  tier3townx:
+    timer: 100m
+    resources:
+      IRON_ORE: 14
+      GOLD_ORE: 6
+      DIAMOND: 2
+    commands: # Item id: Command Use %player_name%
+      COINS: "eco give %player_name% 2500"
+
+  tier1towny:
+    timer: 120m
+    resources:
+      IRON_ORE: 10
+      GOLD_ORE: 2
+      EMERALD: 1
+    commands: # Item id: Command Use %player_name%
+      COINS: "eco give %player_name% 5000"
+
+  tier2towny:
+    timer: 100m
+    resources:
+      IRON_ORE: 12
+      GOLD_ORE: 6
+      EMERALD: 1
+    commands: # Item id: Command Use %player_name%
+      COINS: "eco give %player_name% 10000"
+
+  tier3towny:
+    timer: 100m
+    resources:
+      IRON_ORE: 14
+      GOLD_ORE: 6
+      EMERALD: 2
+    commands: # Item id: Command Use %player_name%
+      COINS: "eco give %player_name% 25000"

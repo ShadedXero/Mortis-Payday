@@ -1,0 +1,37 @@
+default-payday: tier1townx
+wartime:
+  rebuild-mode: WIN # WIN | LOSE | NONE | BOTH
+  rebuild-period: 3 # in days
+  production-percentage: 10
+# Is the payday gui unaccessible to nation members (only town members of x rank can access them, assuming payday-town-restrict is false)
+payday-nation-restrict: false
+# Is the payday gui unaccessible to town members (only nation members of x rank can access them)
+payday-town-restrict: false
+# Same as the above but only applies to conquered towns
+payday-town-conquered-restrict: true
+# Controls how long conquered towns are unable to use their payday gui (in towny days), set to -1 for no limit
+conquered-restrict-days: 3
+# Determines if a town/nation can access the gui for a town at all during war. TRUE for both nation and town to be unable to access, FALSE for neither, NATION for only nation is unable to access, TOWN for only town is unable to access. Controls only for towns currently under attack, not if the nation as a whole is at war
+payday-war-restrict: NATION
+# Can nation members access any town gui in their nation while the capital is under siege?
+payday-capital-war-restrict: false
+# ignores the mortispayday.nation.view permission and instead gives payday nation access to everyone in the nation assuming payday-nation-restrict is false
+payday-nation-democracy: false
+# ignores the mortispayday.town.view permission and instead gives payday town access to everyone in the town assuming payday-town-restrict is false
+payday-town-democracy: false
+# Use %town_name% for the name of the town
+messages:
+  menu-title: "&a%town_name% Menu"
+  no-console: "&cThis command can only be executed by a player"
+  no-town: "&cYou must join a town to use this"
+  no-nation: "&cYou must join a nation to use this"
+  town-restrict: "&cYou don't have the permission to use this"
+  no-permission: "&cYou don't have the permission to use this"
+  conquered: "&cYou don't have the permission to use this"
+  war-restricted: "&cYou don't have the permission to use this"
+  nation-restrict: "&cYou don't have the permission to use this"
+  capital-war-restrict: "&cYou don't have the permission to use this"
+  invalid-town: "&cPlease enter a valid town"
+  invalid-payday: "&cPlease enter a valid payday"
+  payday-changed: "&aPayday changed for the specified town"
+  reloaded: "&aMortis Payday Reloaded"

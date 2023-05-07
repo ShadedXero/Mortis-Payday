@@ -1,0 +1,19 @@
+items:
+  IRON_ORE:
+    material: IRON_ORE
+    amount: 1
+  GOLD_ORE:
+    material: GOLD_ORE
+    amount: 1
+  DIAMOND:
+    material: DIAMOND
+    amount: 1
+  EMERALD:
+    material: EMERALD
+    amount: 1
+  COINS:
+    material: GOLD_INGOT
+    amount: 1
+    name: "&aCoins"
+    lore:
+      - "&aClick to get coins"

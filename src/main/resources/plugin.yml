@@ -1,0 +1,12 @@
+name: MortisPayday
+version: '${project.version}'
+main: me.none030.mortispayday.MortisPayday
+api-version: 1.13
+depend:
+  - Towny
+softdepend:
+  - SiegeWar
+  - EventWar
+commands:
+  payday:
+    aliases: [mortispayday]
