@@ -1,4 +1,5 @@
 me\none030\mortispayday\manager\PaydayCommand.class
+me\none030\mortispayday\payday\listeners\FlagWarListener.class
 me\none030\mortispayday\payday\listeners\EventWarListener.class
 me\none030\mortispayday\config\ConfigManager.class
 me\none030\mortispayday\config\ItemConfig.class

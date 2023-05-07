@@ -134,6 +134,26 @@ public class PaydayCommand implements TabExecutor {
             data.setId(payday.getId());
             sender.sendMessage(mainManager.getPaydayManager().getMessage("PAYDAY_CHANGED"));
         }
+        if (args[0].equalsIgnoreCase("admin")) {
+            if (!(sender instanceof Player)) {
+                sender.sendMessage(mainManager.getPaydayManager().getMessage("NO_CONSOLE"));
+                return false;
+            }
+            Player player = (Player) sender;
+            if (!sender.hasPermission("mortispayday.admin")) {
+                sender.sendMessage(mainManager.getPaydayManager().getMessage("NO_PERMISSION"));
+                return false;
+            }
+            if (args.length != 2) {
+                return false;
+            }
+            Town town = TownyAPI.getInstance().getTown(args[1]);
+            if (town == null) {
+                return false;
+            }
+            PaydayMenu menu = new PaydayMenu(mainManager.getPaydayManager(), new PaydayData(town));
+            menu.open(player);
+        }
         if (args[0].equalsIgnoreCase("reload")) {
             if (!sender.hasPermission("mortispayday.reload")) {
                 sender.sendMessage(mainManager.getPaydayManager().getMessage("NO_PERMISSION"));

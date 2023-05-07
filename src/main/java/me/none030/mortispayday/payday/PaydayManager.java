@@ -6,6 +6,7 @@ import me.none030.mortispayday.MortisPayday;
 import me.none030.mortispayday.data.PaydayData;
 import me.none030.mortispayday.manager.Manager;
 import me.none030.mortispayday.payday.listeners.EventWarListener;
+import me.none030.mortispayday.payday.listeners.FlagWarListener;
 import me.none030.mortispayday.payday.listeners.SiegeWarListener;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
@@ -37,6 +38,9 @@ public class PaydayManager extends Manager {
         }
         if (plugin.hasEventWar()) {
             plugin.getServer().getPluginManager().registerEvents(new EventWarListener(this), plugin);
+        }
+        if (plugin.hasFlagWar()) {
+            plugin.getServer().getPluginManager().registerEvents(new FlagWarListener(this), plugin);
         }
         check();
     }
